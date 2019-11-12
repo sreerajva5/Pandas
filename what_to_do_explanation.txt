@@ -1,0 +1,25 @@
+Data of 1.5 million available in the below format.
+
+
+Filename,last_access,filepath,last_modified,Size_GB
+7394385,2019-07-01T06:50:46,/folder1/volume_number29/v1/v2/7/3/9/4/3/85,2019-07-01T06:50:43,0.004655304
+
+
+
+Logic:
+if filename contains 1 or more underscore (_) are processed files and does not contain underscore are non-processed files.
+last access date (only date) should be taken out from tast access date and time
+
+Output required:
+
+process files summary:
+last_access	filepath	Size_GB
+2018-08-07	VVVP_NFS_186VOL01	0.007839
+
+
+
+non-processed files summary:
+last_access	filepath	Size_GB
+2018-08-07	VVVP_NFS_186VOL01	0.007839
+
+Note:- Size_GB will be the sum of each item belongs to the line items.
